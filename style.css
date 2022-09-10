@@ -83,7 +83,7 @@ body {
 }
 
 @media screen and (max-width: 1440px) {
-    .content-all .card__content {
+    .content-all {
         margin-left: 12em;
         margin-right: 12em;
     }
