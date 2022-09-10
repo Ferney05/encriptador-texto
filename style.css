@@ -4,201 +4,162 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.content-logo {
-    display: flex;
-    align-items: center;
-}
-
-.fondo-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.fondo-nav {
-    background-color: rgb(34, 34, 34);
-    position: fixed;
-    
-    width: 100%;
-    left: 0;
-    top: 0;
-    right: 0;
-}
-
-.logo-img {
-    width: 50px;
-    margin: 30px;
-
-    position: relative;
-    left: 2.2em;
-}
-
-.logo-texto a {
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    letter-spacing: -1px;
-
-    font-weight: 600;
-}
-
-.items li a {
-    text-decoration: none;
-}
-
-.items .li2 a {
-
-    color: white;
-}
-
-.items .li1 a {
-    color: #01AF4B;
-}
-
-.items li a:hover {
-    color: #01AF4B;
-}
-
-.items li {
-    display: inline-block;
-    margin-right: 1em;
-    position: auto;
-}
-
-.items {
-    left: -5em;
-    position: relative;
-}
-
-.content-all {
-    
-    margin-top: 10em;
-    height: 600px;
-    /* z-index: 1; */
-}
-
-.info {
-    font-family: 'Dosis', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-}
-
 @media screen and (max-width: 1440px) {
+
+    .content-logo {
+        display: flex;
+        align-items: center;
+    }
+    
+    .fondo-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .fondo-nav {
+        background-color: rgb(34, 34, 34);
+        position: fixed;
+        
+        width: 100%;
+        left: 0;
+        top: 0;
+        right: 0;
+    }
+    
+    .logo-img {
+        width: 50px;
+        margin: 30px;
+    
+        position: relative;
+        left: 2.2em;
+    }
+    
+    .logo-texto a {
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        letter-spacing: -1px;
+    
+        font-weight: 600;
+    }
+    
+    .items li a {
+        text-decoration: none;
+    }
+    
+    .items .li2 a {
+        color: white;
+    }
+    
+    .items .li1 a {
+        color: #01AF4B;
+    }
+    
+    .items li a:hover {
+        color: #01AF4B;
+    }
+    
+    .items li {
+        display: inline-block;
+        margin-right: 1em;
+        position: auto;
+    }
+    
+    .items {
+        left: -5em;
+        position: relative;
+    }
+    
     .content-all {
+        
+        margin-top: 10em;
+        height: 600px;
+        
         margin-left: 12em;
         margin-right: 12em;
     }
-}
-
-@media screen and (max-width: 980px) {
-    .content-all {
-        height: auto;
-        margin-left: -12em;
-        margin-right: -12em;
-    }
-
-    .fondo-nav {
-        display: flex;
-    }
-
-    .content-logo {
-        margin-left: -4em;
-        margin-top: -0.5em;
-    }
-
-    .logo-texto a {
-        font-size: 20px;
-    }
-
-    .items {
-        left: -13em;
-        top: -0.1em;
-    }
-}
-
-h2 {
-    font-weight: bolder;
-    margin-bottom: 20px;
-    margin-top: 15px;
-}
-
-.encript-desen-result {
-    padding: 25px 40px;
-}
-
-.ingresador-texto {
-    padding: 25px 40px;
-}
-
-.input-text {
-    width: 100%;
-    height: 180px;
-    background-color: rgb(34, 34, 34);
-    color: #F8FBFE;
-    font-size: 1rem;
-    text-align: center;
-    border-radius: 15px;
-    border: none;
-    outline: none;
-}
-.form-input .input-text {
-    font-family: 'Dosis', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-}
-
-::placeholder {
-    color: white;
-}
-
-.output {
-    width: 100%;
-    height: 180px;
-    background-color: #3b3b3b;
-    color: #F8FBFE;
-    font-size: 1rem;
-    text-align: center;
-    border-radius: 5px;
-}
-
-.botones-text {
-    margin-top: 15px;
-}
-
-.boton {
     
-    width: 50%;
-    height: 60px;
-    padding: 0.9rem 1rem;
-    color: #01AF4B;
-    background-color: #4e4e4e34;
-    font-size: 15px;
-    border-radius: 15px;
-    border: 1px solid #01AF4B;
-    outline: none;
-    cursor: pointer;
-    transition: .3s;
-    margin: 5px;
-}
+    .info {
+        font-family: 'Dosis', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+    } 
 
-.copy__button {
-    margin-top: 25px;
-}
 
-.mensaje {
-    transition-duration: 1s;
-}
 
-@media screen and (max-width: 980px) {
-    .result-encrip-desencrip {
-        grid-template-columns: 1fr;
+    h2 {
+        font-weight: bolder;
+        margin-bottom: 20px;
+        margin-top: 15px;
     }
-
+    
     .encript-desen-result {
-        margin-bottom: 20%;
-        height: 60%;
+        padding: 25px 40px;
     }
-}
+    
+    .ingresador-texto {
+        padding: 25px 40px;
+    }
+    
+    .input-text {
+        width: 100%;
+        height: 180px;
+        background-color: rgb(34, 34, 34);
+        color: #F8FBFE;
+        font-size: 1rem;
+        text-align: center;
+        border-radius: 15px;
+        border: none;
+        outline: none;
+    }
+    .form-input .input-text {
+        font-family: 'Dosis', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    ::placeholder {
+        color: white;
+    }
+    
+    .output {
+        width: 100%;
+        height: 180px;
+        background-color: #3b3b3b;
+        color: #F8FBFE;
+        font-size: 1rem;
+        text-align: center;
+        border-radius: 5px;
+    }
+    
+    .botones-text {
+        margin-top: 15px;
+    }
+    
+    .boton {
+        
+        width: 50%;
+        height: 60px;
+        padding: 0.9rem 1rem;
+        color: #01AF4B;
+        background-color: #4e4e4e34;
+        font-size: 15px;
+        border-radius: 15px;
+        border: 1px solid #01AF4B;
+        outline: none;
+        cursor: pointer;
+        transition: .3s;
+        margin: 5px;
+    }
+    
+    .copy__button {
+        margin-top: 25px;
+    }
+    
+    .mensaje {
+        transition-duration: 1s;
+    }
 
-/* FOOTER */
+    /* FOOTER */
 
 .back-footer {
     background-color: rgb(34, 34, 34);
@@ -227,4 +188,40 @@ footer .p-footer {
     font-family: 'Dosis', sans-serif;
     font-family: 'Montserrat', sans-serif;
 }
+}
 
+@media screen and (max-width: 980px) {
+    .content-all {
+        height: auto;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .fondo-nav {
+        display: block;
+    }
+
+    .content-logo {
+        margin-left: -3em;
+        margin-top: -1em;
+    }
+
+    .items {
+        left: 9em;
+        top: -1em;
+    }
+    .logo-texto a {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .result-encrip-desencrip {
+        grid-template-columns: 1fr;
+    }
+
+    .encript-desen-result {
+        margin-bottom: 20%;
+        height: 60%;
+    }
+}
