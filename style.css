@@ -193,12 +193,12 @@ h2 {
 
 .boton {
     
-    width: 50%;
-    height: 60px;
+    width: 40%;
+    height: 50px;
     padding: 0.9rem 1rem;
     color: #01AF4B;
     background-color: #4e4e4e34;
-    font-size: 15px;
+    font-size: 13px;
     border-radius: 15px;
     border: 1px solid #01AF4B;
     outline: none;
@@ -229,8 +229,10 @@ h2 {
 /* FOOTER */
 
 .back-footer {
+    top: -5em;
+    position: relative;
     background-color: rgb(34, 34, 34);
-    padding: 30px;
+    padding: 25px;
 }
 
 .center-footer {
@@ -251,7 +253,7 @@ footer .img-footer {
 footer .p-footer {
     text-align: center;
     color: white;
-    font-size: 12px;
+    font-size: 10px;
     font-family: 'Dosis', sans-serif;
     font-family: 'Montserrat', sans-serif;
 }
