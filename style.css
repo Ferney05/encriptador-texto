@@ -168,6 +168,9 @@ h2 {
 .form-input .input-text {
     font-family: 'Dosis', sans-serif;
     font-family: 'Montserrat', sans-serif;
+
+    margin-left: 5em;
+    margin-top: -3em;
 }
 
 ::placeholder {
