@@ -1,3 +1,8 @@
+//  MENU
+
+const menu = document.querySelector('.menu');
+const items = document.querySelector('.items');
+
 /* Ids */
 
 const inputText = document.getElementById('input-text');
@@ -5,11 +10,6 @@ const fraseMsg = document.getElementById('frase-msg');
 const infoText = document.getElementById('info-text');
 const errorInvalido = document.getElementById('error-invalid');
 
-const items = document.querySelector('.items');
-const li1 = document.querySelector('.li1');
-const li2 = document.querySelector('.li2');
-const a1 = document.querySelector('.a1');
-const a2 = document.querySelector('.a2');
 const info = document.querySelector('.info');
 
 const buttonOne = document.getElementById('button-one');
