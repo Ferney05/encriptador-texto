@@ -4,21 +4,22 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-
-
 .menu-div .menu {
     display: none;
 }
 
 .content-logo {
-    display: flex;
     align-items: center;
+    left: 8em;
+    top: -1em;
+    position: relative;
 }
 
 .fondo-nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    
+    margin-top: -3em;
 }
 
 .fondo-nav {
@@ -36,7 +37,8 @@ body {
     margin: 30px;
 
     position: relative;
-    left: 2.2em;
+    left: -4.5em;
+    top: 4.1em;
 }
 
 .logo-texto a {
@@ -52,16 +54,13 @@ body {
     text-decoration: none;
 }
 
-.items .li2 a {
-    color: white;
-}
-
-.items .li1 a {
+.items li a {
     color: #01AF4B;
-}
+    left: 48em;
+    top: -1.5em;
+    position: relative;
 
-.items li a:hover {
-    color: #01AF4B;
+    font-size: 13px;
 }
 
 .items li {
@@ -212,6 +211,7 @@ footer .p-footer {
         left: 9em;
         top: -1em;
     }
+
     .logo-texto a {
         font-size: 22px;
     }
@@ -227,3 +227,5 @@ footer .p-footer {
         height: 60%;
     }
 }
+
+
