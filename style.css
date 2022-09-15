@@ -11,7 +11,7 @@ body {
 .content-logo {
     align-items: center;
     left: 8em;
-    top: -1em;
+    top: -0.7em;
     position: relative;
 }
 
@@ -33,22 +33,26 @@ body {
 }
 
 .logo-img {
-    width: 50px;
+    width: 45px;
     margin: 30px;
 
     position: relative;
     left: -4.5em;
-    top: 4.1em;
+    top: 3.9em;
 }
 
 .logo-texto a {
     text-decoration: none;
-    font-size: 25px;
     color: white;
     letter-spacing: -1px;
 
     font-weight: 600;
 }
+
+.content-logo .logo-texto a {
+    font-size: 18px;
+}
+
 
 .items li a {
     text-decoration: none;
@@ -56,11 +60,11 @@ body {
 
 .items li a {
     color: #01AF4B;
-    left: 48em;
-    top: -1.5em;
+    left: 75em;
+    top: -1.1em;
     position: relative;
 
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .items li {
@@ -203,17 +207,27 @@ footer .p-footer {
     }
 
     .content-logo {
-        margin-left: -3em;
+        margin-left: -4em;
         margin-top: -1em;
     }
 
-    .items {
-        left: 9em;
+    .items li {
+        left: -4em;
         top: -1em;
+        position: relative;
     }
 
     .logo-texto a {
         font-size: 22px;
+    }
+
+    .logo-img {
+        width: 50px;
+        margin: 30px;
+    
+        position: relative;
+        left: -4.5em;
+        top: 4.1em;
     }
 }
 
