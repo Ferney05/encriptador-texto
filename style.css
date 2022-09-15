@@ -155,56 +155,6 @@ footer {
 
 /* AJUSTANDO AL CELL */
 
-@media screen and (max-width: 780px){
-
-    .encript-desen-result {
-        width: 100%;
-    }
-
-    .logo-img {
-        left: -0.5em;
-        position: relative;
-    }
-    
-    .logo-texto a {
-        font-size: 20px;
-        left: -0.8em;
-        position: relative;
-    }
-    
-    .items li {
-        margin-right: 5em;
-    }
-    
-    .container-section-div {
-        width: 100%;
-    }
-    
-    .input-text {
-        width: 90%;
-        margin-left: 1.7em;
-    }
-
-    .info {
-        margin-left: 1.2em;
-    }
-    
-    .buttons {
-        margin-top: 0.5em;
-        margin-left: -0.5em;
-    }
-    
-    .boton {
-        width: 200px;
-        height: 60px;
-        margin-left: 2em;
-    }
-    
-}
-
-
-
-
 @media screen and (max-width: 980px){
 
     .encript-desen-result {
@@ -223,7 +173,7 @@ footer {
     }
     
     .items li {
-        margin-right: 5em;
+        margin-right: 3em;
     }
     
     .container-section-div {
@@ -231,8 +181,8 @@ footer {
     }
     
     .input-text {
-        width: 90%;
-        margin-left: 2.8em;
+        width: 85%;
+        margin-left: 2.4em;
     }
 
     .info {
@@ -241,13 +191,21 @@ footer {
     
     .buttons {
         margin-top: 0.5em;
-        margin-left: 0.4em;
+        margin-left: -0em;
     }
     
     .boton {
-        width: 335px;
+        width: 175px;
         height: 60px;
         margin-left: 2em;
+    }
+
+    .copy__button {
+        margin-left: -0.1em;
+    }
+
+    .info-content {
+        width: 70%;
     }
 }
 
@@ -398,11 +356,6 @@ footer .p-footer {
 }
 
 @media screen and (max-width: 980px) {
-    .content-all {
-        height: auto;
-        margin-left: 16px;
-        margin-right: 16px;
-    }
 
     .fondo-nav {
         display: block;
@@ -448,15 +401,5 @@ footer .p-footer {
     }
 } */
 
-@media screen and (max-width: 980px) {
-    .result-encrip-desencrip {
-        grid-template-columns: 1fr;
-    }
-
-    .encript-desen-result {
-        margin-bottom: 20%;
-        height: 60%;
-    }
-}
 
 
