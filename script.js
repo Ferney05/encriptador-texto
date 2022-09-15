@@ -1,7 +1,3 @@
-//  MENU
-
-const menu = document.querySelector('.menu');
-const items = document.querySelector('.items');
 
 /* Ids */
 
@@ -17,18 +13,19 @@ const buttonTwo = document.getElementById('button-two');
 const buttonCopiar = document.getElementById('button-copy');
 
 
-const mayusculas = [
-    {mayus: 'A'}, {mayus: 'B'}, {mayus: 'C'}, {mayus: 'D'}, {mayus: 'E'}, {mayus: 'F'},
-    {mayus: 'G'}, {mayus: 'H'}, {mayus: 'I'}, {mayus: 'J'}, {mayus: 'K'}, {mayus: 'L'},
-    {mayus: 'M'}, {mayus: 'N'}, {mayus: 'Ñ'}, {mayus: 'O'}, {mayus: 'P'}, {mayus: 'Q'},
-    {mayus: 'R'}, {mayus: 'S'}, {mayus: 'T'}, {mayus: 'U'}, {mayus: 'V'}, {mayus: 'W'},
-    {mayus: 'X'}, {mayus: 'Y'}, {mayus: 'Z'}, {mayus: '0'}, {mayus: '1'}, {mayus: '2'},
-    {mayus: '3'}, {mayus: '4'}, {mayus: '5'}, {mayus: '6'}, {mayus: '7'}, {mayus: '8'}, 
-    {mayus: '9'}, {vacio: " "}, {vacio: 0}
+const alfaNumsLetters = [
+    {mayusNums: 'A'}, {mayusNums: 'B'}, {mayusNums: 'C'}, {mayusNums: 'D'}, {mayusNums: 'E'}, {mayusNums: 'F'},
+    {mayusNums: 'G'}, {mayusNums: 'H'}, {mayusNums: 'I'}, {mayusNums: 'J'}, {mayusNums: 'K'}, {mayusNums: 'L'},
+    {mayusNums: 'M'}, {mayusNums: 'N'}, {mayusNums: 'Ñ'}, {mayusNums: 'O'}, {mayusNums: 'P'}, {mayusNums: 'Q'},
+    {mayusNums: 'R'}, {mayusNums: 'S'}, {mayusNums: 'T'}, {mayusNums: 'U'}, {mayusNums: 'V'}, {mayusNums: 'W'},
+    {mayusNums: 'X'}, {mayusNums: 'Y'}, {mayusNums: 'Z'}, {mayusNums: 'Á'}, {mayusNums: 'É'}, {mayusNums: 'Í'},
+    {mayusNums: 'Ó'}, {mayusNums: 'Ú'}, {mayusNums: 'á'}, {mayusNums: 'é'}, {mayusNums: 'í'}, {mayusNums: 'ó'},
+    {mayusNums: 'ú'}, {mayusNums: '0'}, {mayusNums: '1'}, {mayusNums: '2'}, {mayusNums: '3'}, {mayusNums: '4'}, 
+    {mayusNums: '5'}, {mayusNums: '6'}, {mayusNums: '7'}, {mayusNums: '8'}, {mayusNums: '9'}, {vacio: " "}, {vacio: 0}
 ]
 
 inputText.addEventListener('keyup', () => {
-    if(mayusculas.find(valor => valor.mayus === inputText.value)) {
+    if(alfaNumsLetters.find(valor => valor.mayusNums === inputText.value)) {
         info.style = 'font-weight: bolder';
         info.style.color = '#e40000';
 
@@ -40,15 +37,15 @@ inputText.addEventListener('keyup', () => {
         buttonOne.style = 'cursor: not-allowed; color: white; background-color: rgb(229, 229, 229) !important; pointer-events: none';
         buttonTwo.style = 'cursor: not-allowed; color: white; background-color: rgb(229, 229, 229) !important; pointer-events: none';
         buttonCopiar.style = 'cursor: not-allowed; color: white; background-color: rgb(229, 229, 229) !important; pointer-events: none';
-    } else if(mayusculas.find(valor => valor.vacio === inputText.value.length)){
+    } else if(alfaNumsLetters.find(valor => valor.vacio === inputText.value.length)){
         info.style = 'font-weight: none';
         info.style.color = 'black';
         fraseMsg.style.display = 'block';
         errorInvalido.style.display = 'none';
 
-        buttonOne.style = 'cursor: pointer; color: #01AF4B; background-color: #4e4e4e34; pointer-events: block';
-        buttonTwo.style = 'cursor: pointer; color: #01AF4B; background-color: #4e4e4e34; pointer-events: block';
-        buttonCopiar.style = 'cursor: pointer; color: #01AF4B; background-color: #4e4e4e34; pointer-events: block';
+        buttonOne.style = 'cursor: pointer; color: #01AF4B; background-color: white; pointer-events: block';
+        buttonTwo.style = 'cursor: pointer; color: #01AF4B; background-color: white; pointer-events: block';
+        buttonCopiar.style = 'cursor: pointer; color: #01AF4B; background-color: white; pointer-events: block';
     }
 })
 
@@ -131,23 +128,23 @@ function Desencriptar(ResultadoN) {
 
 function stylesBotonCopiar() {
     buttonCopiar.style.display = 'block';
-    buttonCopiar.style.backgroundColor = '#4e4e4e34';
+    buttonCopiar.style.backgroundColor = 'white';
     buttonCopiar.style.color = '#01AF4B';
-    buttonCopiar.style.border = '1px solid #01AF4B';
+    buttonCopiar.style.border = '2px solid #01AF4B';
 }
 
 function botonOne() {
     buttonOne.style.display = 'block';
-    buttonOne.style.backgroundColor = '#4e4e4e34';
+    buttonOne.style.backgroundColor = 'white';
     buttonOne.style.color = '#01AF4B';
-    buttonOne.style.border = '1px solid #01AF4B';
+    buttonOne.style.border = '2px solid #01AF4B';
 }
 
 function botonTwo() {
     buttonTwo.style.display = 'block';
-    buttonTwo.style.backgroundColor = '#4e4e4e34';
+    buttonTwo.style.backgroundColor = 'white';
     buttonTwo.style.color = '#01AF4B';
-    buttonTwo.style.border = '1px solid #01AF4B';
+    buttonTwo.style.border = '2px solid #01AF4B';
 }
 
 
