@@ -37,8 +37,6 @@ inputText.addEventListener('keyup', () => {
         errorInvalido.style = 'font-weight: bold';
         errorInvalido.style.color = 'red';
 
-        infoContent.style = 'width: 100%';
-
         buttonOne.style = 'cursor: not-allowed; color: white; background-color: rgb(229, 229, 229) !important; pointer-events: none';
         buttonTwo.style = 'cursor: not-allowed; color: white; background-color: rgb(229, 229, 229) !important; pointer-events: none';
         buttonCopiar.style = 'cursor: not-allowed; color: white; background-color: rgb(229, 229, 229) !important; pointer-events: none';
@@ -61,12 +59,10 @@ inputText.addEventListener('keyup', () => {
         fraseMsg.style.display = "block";
         fraseMsg.innerText = 'Ningun mensaje fue encontrado';
         infoText.innerText = 'Ingresa el texto que desees encriptar o desencriptar';
-        resultEncriptadoDesencriptado.style = 'position: fixed; margin-top: 14em; margin-left: 7em';
-        
+        resultEncriptadoDesencriptado.style = 'margin-left: 1em';
     }else if (inputText.value.length >= 1) {
         fraseMsg.innerText = 'Puedes encriptar o desencriptar tu mensaje';
         infoText.innerText = inputText.value;
-        resultEncriptadoDesencriptado.style = 'position: fixed; margin-top: 14em; margin-left: 9em';
     }
 })
 
