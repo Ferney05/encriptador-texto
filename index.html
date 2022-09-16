@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,64 +11,64 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Montserrat:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>  
+    <div class="contenedor">
+      <header class="logo">
+        <div class="back-fondo">
+             <div class="content-logo">
+               <p class="logo-texto"><a href="">Encryptor</a></p>
+             </div>        
+     
+             <nav class="items">
+               <li><a href="index.html">Inicio</a></li>
+             </nav>
+        </div>
+     </header>
+ 
+     <main class="main">
+       <div class="orientate-flex">
+          <section class="container-section-div">
+            <div class="content-buttons-parrafo">
+             <section class="section-input">
+               <form class="form-input">
+                 <input class="input-text" type="text" id="input-text" onkeypress="return ValidandoProcess(event)" placeholder="Ingrese el texto aquí">
+               </form>
+             </section>
+ 
+             <section class="button-parrafo">
+               <form class="botones-text">
+                 <label class="info">&#9888 Solo letras minúsculas sin acento</label><br>
+                 <div class="buttons" style="display: flex;">
+                   <input class="boton" type="button" value="Encriptar" id="button-one">
+                   <input class="boton boton-desen" type="button" value="Desencriptar" id="button-two">
+                 </div>
+               </form>
+             </section>  
+            </div>
+          </section>
    
-    <header class="logo">
-       <div class="fondo-nav">
-            <div class="content-logo">
-              <img src="logo-fd.png" alt="Logo de la página" class="logo-img">
-              <p class="logo-texto"><a href="">Ferdan Encryptor</a></p>
-            </div>        
-    
-            <nav class="items">
-              <li><a href="index.html">Inicio</a></li>
-            </nav>
-       </div>
-    </header>
-
-    <main class="main">
-        <section class="container-section-div">
-          <div class="content-buttons-parrafo">
-            <section class="section-input">
-              <form class="form-input">
-                <input class="input-text" type="text" id="input-text" onkeypress="return ValidandoProcess(event)" placeholder="Ingrese el texto aquí">
-              </form>
-            </section>
-
-            <section class="button-parrafo">
-              <form class="botones-text">
-                <label class="info">&#9888 Solo letras minúsculas sin acento</label><br>
-                <div class="buttons" style="display: flex;">
-                  <input class="boton" type="button" value="Encriptar" id="button-one">
-                  <input class="boton" type="button" value="Desencriptar" id="button-two">
-                </div>
-              </form>
-            </section>  
-          </div>
-        </section>
-    
-        <section class="result-encrip-desencrip">
-          <div class="encript-desen-result">
-            <center>
-              <div class="info-content">
-                <h2 class="frase-msg error-invalid" id="frase-msg">Ningun mensaje fue encontrado</h2>
-                <h2 class="frase-msg" id="error-invalid"></h2>
-                <p class="info-text" id="info-text">Ingresa el texto que desea encriptar o desencriptar</p>
-            
-              </div>
-            </center>
-            <center>
-              <button class="boton copy__button" id="button-copy">Copiar</button>        
-            </center>
-          </div>
-        </section>
-      <script src="script.js"></script>
-    </main>
-    
-    <footer class="back-footer">
-        <center class="center-footer">
-          <img src="logo-fd.png" alt="" class="img-footer">
-          <p class="p-footer">&copyCopyright Ferdan Encryptor 2022</p>
-        </center>
-    </footer>
+          <section class="result-encrip-desencrip">
+            <div class="result-encriptado-desencriptado">
+             <center>
+               <div class="info-content">
+                 <h2 class="frase-msg error-invalid" id="frase-msg">Ningun mensaje fue encontrado</h2>
+                 <h2 class="frase-msg" id="error-invalid"></h2>
+                 <p class="info-text" id="info-text">Ingresa el texto que desea encriptar o desencriptar</p>
+               </div>
+             </center>
+             <center>
+               <button class="boton copy__button" id="button-copy">Copiar</button>        
+             </center>
+            </div>
+          </section>
+        </div>
+       <script src="script.js"></script>
+     </main>
+     
+     <footer class="back-footer">
+         <center class="center-footer">
+           <p class="p-footer">&copyCopyright Ferdan Encryptor 2022.<br>Todos los derechos reservados.</p>
+         </center>
+     </footer>
+    </div>
   </body>
 </html>

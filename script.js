@@ -12,6 +12,9 @@ const buttonOne = document.getElementById('button-one');
 const buttonTwo = document.getElementById('button-two');
 const buttonCopiar = document.getElementById('button-copy');
 
+const resultEncriptadoDesencriptado = document.querySelector('.result-encriptado-desencriptado');
+const infoContent = document.querySelector('.info-content');
+
 
 const alfaNumsLetters = [
     {mayusNums: 'A'}, {mayusNums: 'B'}, {mayusNums: 'C'}, {mayusNums: 'D'}, {mayusNums: 'E'}, {mayusNums: 'F'},
@@ -26,26 +29,30 @@ const alfaNumsLetters = [
 
 inputText.addEventListener('keyup', () => {
     if(alfaNumsLetters.find(valor => valor.mayusNums === inputText.value)) {
-        info.style = 'font-weight: bolder';
-        info.style.color = '#e40000';
+        info.style = 'font-weight: bold'
+        info.style.color = 'red'
 
         fraseMsg.style.display = 'none';
         errorInvalido.innerText = 'Has ingresado un valor inválido';
-        errorInvalido.style = 'font-weight: bolder';
-        errorInvalido.style.color = '#e40000';
+        errorInvalido.style = 'font-weight: bold';
+        errorInvalido.style.color = 'red';
+
+        infoContent.style = 'width: 100%';
 
         buttonOne.style = 'cursor: not-allowed; color: white; background-color: rgb(229, 229, 229) !important; pointer-events: none';
         buttonTwo.style = 'cursor: not-allowed; color: white; background-color: rgb(229, 229, 229) !important; pointer-events: none';
         buttonCopiar.style = 'cursor: not-allowed; color: white; background-color: rgb(229, 229, 229) !important; pointer-events: none';
     } else if(alfaNumsLetters.find(valor => valor.vacio === inputText.value.length)){
         info.style = 'font-weight: none';
-        info.style.color = 'black';
+        info.style.color = 'white';
         fraseMsg.style.display = 'block';
         errorInvalido.style.display = 'none';
 
         buttonOne.style = 'cursor: pointer; color: #01AF4B; background-color: white; pointer-events: block';
         buttonTwo.style = 'cursor: pointer; color: #01AF4B; background-color: white; pointer-events: block';
         buttonCopiar.style = 'cursor: pointer; color: #01AF4B; background-color: white; pointer-events: block';
+
+        resultEncriptadoDesencriptado.style = 'position: fixed; margin-top: 14em; margin-left: 8em';
     }
 })
 
@@ -54,10 +61,12 @@ inputText.addEventListener('keyup', () => {
         fraseMsg.style.display = "block";
         fraseMsg.innerText = 'Ningun mensaje fue encontrado';
         infoText.innerText = 'Ingresa el texto que desees encriptar o desencriptar';
+        resultEncriptadoDesencriptado.style = 'position: fixed; margin-top: 14em; margin-left: 7em';
         
     }else if (inputText.value.length >= 1) {
         fraseMsg.innerText = 'Puedes encriptar o desencriptar tu mensaje';
         infoText.innerText = inputText.value;
+        resultEncriptadoDesencriptado.style = 'position: fixed; margin-top: 14em; margin-left: 9em';
     }
 })
 
