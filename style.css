@@ -30,7 +30,7 @@ body {
     text-decoration: none;
     color: #01AF4B;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 20px;
 }
 
 .items li {
@@ -42,6 +42,7 @@ body {
 .items li a {
     text-decoration: none;
     color: #01AF4B;
+    font-size: 10px;
 }
 
 /* MAIN SECTIONS */
@@ -85,7 +86,6 @@ input::placeholder {
     font-family: 'Dosis', sans-serif;
     font-family: 'Montserrat', sans-serif;
 
-    font-size: 20px;
     color: #01AF4B;
 }
 
@@ -97,8 +97,8 @@ input::placeholder {
 
 .info {
     position: relative;
-    left: -10em;
-    font-size: 14px;
+    left: -14.4em;
+    font-size: 11px;
 }
 
 .buttons {
@@ -109,12 +109,12 @@ input::placeholder {
 }
 
 .boton {
-    width: 250px;
-    height: 60px;
+    width: 240px;
+    height: 45px;
 
     border: 1px solid #01AF4B;
     color: #01AF4B;
-    font-size: 15px;
+    font-size: 12px;
     font-family: 'Dosis', sans-serif;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
@@ -127,10 +127,12 @@ input::placeholder {
 .frase-msg {
     margin-bottom: 1em;
     font-weight: bold;
+    font-size: 14.5px;
 }
 
 .info-text {
     margin-bottom: 3em;
+    font-size: 14.5px;
 }
 
 /* FOOTER */
@@ -144,9 +146,7 @@ input::placeholder {
 
 .p-footer {
     color: #01AF4B;
-    font-size: 14px;
-    margin-bottom: 1em;
-    margin-top: 0.5em;
+    font-size: 10px;
 }
 
 @media screen and (max-width: 800px){
@@ -174,9 +174,26 @@ input::placeholder {
     .boton {
         width: 200px;
         height: 50px;
+
+        font-size: 15px;
     }
 
     .info {
         left: -6.6em;
+        font-size: 14px;
+    }
+
+    input::placeholder {
+        font-size: 20px;
+    }
+
+    .p-footer {
+        font-size: 14px;
+        margin-bottom: 1em;
+        margin-top: 0.5em;
+    }
+
+    .frase-msg, .info-text {
+        font-size: none;
     }
 }
