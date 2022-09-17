@@ -117,6 +117,7 @@ input::placeholder {
     font-size: 15px;
     font-family: 'Dosis', sans-serif;
     font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
 }
 
 .boton-desen {
@@ -149,7 +150,33 @@ input::placeholder {
 }
 
 @media screen and (max-width: 800px){
+
+    body {
+        background: linear-gradient(90deg, rgba(52, 52, 255, 0.582), rgba(247, 136, 68, 0.418));
+    }
+
+    .logo-texto a {
+        font-size: 30px;
+    }
+
+    .content-logo {
+        left: 5.5em;
+    }
+
+    .items li {
+        display: none;
+    }
+
     .input-text {
-        width: 40%;
+        width: 50%;
+    }
+
+    .boton {
+        width: 200px;
+        height: 50px;
+    }
+
+    .info {
+        left: -6.6em;
     }
 }
