@@ -2,12 +2,12 @@
 @media (max-width: 500px) {
     .main__orientate-flex {
         padding: 0 2rem;
+        justify-content: center;
     }
 
     .buttons {
         flex-direction: column;
-        gap: 1rem;
-        margin-left: -4rem;
+        gap: 1rem;   
     }
 
     .contenedor-input__buttons {
@@ -19,8 +19,8 @@
         margin-bottom: 2rem;
     }
 
-    .botonCopiar {
-        margin-left: 1.2rem;
+    .info {
+        margin-left: 4rem;
     }
 
     .result-encrip-desencrip {

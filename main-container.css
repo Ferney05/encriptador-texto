@@ -1,6 +1,6 @@
 
 .main__orientate-flex {
-
+    width: auto;
     padding: 0 4rem;
 
     display: flex;
