@@ -1,0 +1,54 @@
+
+.contenedor-input__buttons {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input-text {
+    width: 350px;
+    height: 30px;
+
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    transition: 1s;
+
+    font-size: 1.2rem;
+}
+
+.input-text::placeholder {
+    font-size: 1.2rem;
+    /* color: var(--color-morado-oscuro); */
+}
+
+.input-text:focus::placeholder {
+    color: var(--color-morado-oscuro);
+}
+
+.botonEncriptar, .botonDesencriptar, .botonCopiar {
+    width: 250px;
+    height: 65px;
+
+    border: 2px solid var(--color-morado-oscuro);
+    color: var(--color-morado-oscuro);
+    font-size: 1rem;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.buttons {
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.frase-msg {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--color-negro-claro);
+}

@@ -1,0 +1,13 @@
+
+.main__orientate-flex {
+
+    padding: 0 4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 3rem;
+
+    flex-wrap: wrap;
+}

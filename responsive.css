@@ -1,0 +1,29 @@
+
+@media (max-width: 500px) {
+    .main__orientate-flex {
+        padding: 0 2rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 1rem;
+        margin-left: -4rem;
+    }
+
+    .contenedor-input__buttons {
+        height: 420px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        margin-bottom: 2rem;
+    }
+
+    .botonCopiar {
+        margin-left: 1.2rem;
+    }
+
+    .result-encrip-desencrip {
+        margin-bottom: 3rem;
+    }
+}

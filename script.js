@@ -28,25 +28,25 @@ const alfaNumsLetters = [
 inputText.addEventListener('keyup', () => {
     if(alfaNumsLetters.find(valor => valor.mayusNums === inputText.value)) {
         info.style = 'font-weight: bold'
-        info.style.color = 'red'
+        info.style.color = '#d42929'
 
         fraseMsg.style.display = 'none';
         errorInvalido.innerText = 'Has ingresado un valor inválido';
         errorInvalido.style = 'font-weight: bold';
-        errorInvalido.style.color = 'red';
+        errorInvalido.style.color = '#d42929';
 
-        buttonOne.style = 'cursor: not-allowed; color: white; background-color: rgb(229, 229, 229) !important; pointer-events: none';
-        buttonTwo.style = 'cursor: not-allowed; color: white; background-color: rgb(229, 229, 229) !important; pointer-events: none';
-        buttonCopiar.style = 'cursor: not-allowed; color: white; background-color: rgb(229, 229, 229) !important; pointer-events: none';
+        buttonOne.style = 'cursor: not-allowed; color: #d42929; background-color: rgb(229, 229, 229) !important; pointer-events: none';
+        buttonTwo.style = 'cursor: not-allowed; color: #d42929; background-color: rgb(229, 229, 229) !important; pointer-events: none';
+        buttonCopiar.style = 'cursor: not-allowed; color: #d42929; background-color: rgb(229, 229, 229) !important; pointer-events: none';
     } else if(alfaNumsLetters.find(valor => valor.vacio === inputText.value.length)){
         info.style = 'font-weight: none';
         info.style.color = 'black';
         fraseMsg.style.display = 'block';
         errorInvalido.style.display = 'none';
 
-        buttonOne.style = 'cursor: pointer; color: #01AF4B; background-color: white; pointer-events: block';
-        buttonTwo.style = 'cursor: pointer; color: #01AF4B; background-color: white; pointer-events: block';
-        buttonCopiar.style = 'cursor: pointer; color: #01AF4B; background-color: white; pointer-events: block';
+        buttonOne.style = 'cursor: pointer; color: #6A1B9A; background-color: white; pointer-events: block';
+        buttonTwo.style = 'cursor: pointer; color: #6A1B9A; background-color: white; pointer-events: block';
+        buttonCopiar.style = 'cursor: pointer; color: #6A1B9A; background-color: white; pointer-events: block';
     }
 })
 
@@ -67,8 +67,8 @@ buttonOne.onclick = () => {
     const ResultadoN = inputText.value;
     Encriptar(ResultadoN);
 
-    buttonOne.style.backgroundColor = '#01AF4B';
-    buttonOne.style.border = '1px solid #01AF4B';
+    buttonOne.style.backgroundColor = '#6A1B9A';
+    buttonOne.style.border = '2px solid #6A1B9A';
     buttonOne.style.color = 'white';
 }
 
@@ -76,8 +76,8 @@ buttonTwo.onclick = () => {
     const ResultadoN = inputText.value;
     Desencriptar(ResultadoN);
 
-    buttonTwo.style.backgroundColor = '#01AF4B';
-    buttonTwo.style.border = '1px solid #01AF4B';
+    buttonTwo.style.backgroundColor = '#6A1B9A';
+    buttonTwo.style.border = '2px solid #6A1B9A';
     buttonTwo.style.color = 'white';
 }
 
@@ -89,8 +89,8 @@ buttonCopiar.onclick = () => {
     document.execCommand('copy');
     document.body.removeChild(input);
 
-    buttonCopiar.style.backgroundColor = '#01AF4B';
-    buttonCopiar.style.border = '1px solid #01AF4B';
+    buttonCopiar.style.backgroundColor = '#6A1B9A';
+    buttonCopiar.style.border = '2px solid #6A1B9A';
     buttonCopiar.style.color = 'white';
 
     botonOne();
@@ -131,22 +131,22 @@ function Desencriptar(ResultadoN) {
 function stylesBotonCopiar() {
     buttonCopiar.style.display = 'block';
     buttonCopiar.style.backgroundColor = 'white';
-    buttonCopiar.style.color = '#01AF4B';
-    buttonCopiar.style.border = '1px solid #01AF4B';
+    buttonCopiar.style.color = '#6A1B9A';
+    buttonCopiar.style.border = '2px solid #6A1B9A';
 }
 
 function botonOne() {
     buttonOne.style.display = 'block';
     buttonOne.style.backgroundColor = 'white';
-    buttonOne.style.color = '#01AF4B';
-    buttonOne.style.border = '1px solid #01AF4B';
+    buttonOne.style.color = '#6A1B9A';
+    buttonOne.style.border = '2px solid #6A1B9A';
 }
 
 function botonTwo() {
     buttonTwo.style.display = 'block';
     buttonTwo.style.backgroundColor = 'white';
-    buttonTwo.style.color = '#01AF4B';
-    buttonTwo.style.border = '1px solid #01AF4B';
+    buttonTwo.style.color = '#6A1B9A';
+    buttonTwo.style.border = '2px solid #6A1B9A';
 }
 
 

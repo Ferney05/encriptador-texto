@@ -1,0 +1,16 @@
+
+.header-container {
+    padding: 0.5rem 3rem;
+    text-align: center;
+    
+    margin-top: 1rem;
+}
+
+.header__title {
+    font-size: 2.2rem;
+    font-weight: 700;
+
+    background: linear-gradient(190deg, #ff6600,#dd64a9 40%, var(--color-morado-oscuro) 60%) padding-box;
+    color: var(--color-transparente);
+    -webkit-background-clip: text;
+}
